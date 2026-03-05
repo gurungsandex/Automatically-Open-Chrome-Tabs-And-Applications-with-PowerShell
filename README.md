@@ -122,6 +122,7 @@ cd C:\Automation\MorningWorkspace
 
 <img width="977" height="386" alt="image" src="https://github.com/user-attachments/assets/05b75295-28cb-46cd-83f7-2c76875c9b0b" />
 
+
 The script checks both Program Files and Program Files (x86) paths and exits if Chrome is not installed.
 
 The script reads Chrome’s User Data folder and lists all profiles automatically, falls back to Default if no profiles are found.
@@ -129,6 +130,7 @@ The script reads Chrome’s User Data folder and lists all profiles automaticall
 The script reads urls.txt and ignores empty lines and lines starting with #.
 
 The tab delay is automatic based on Chrome running or not on the computer. 
+
 
 
 <img width="967" height="669" alt="image" src="https://github.com/user-attachments/assets/26b3c787-aeee-4392-8d3e-dd5c29042a7b" />
