@@ -16,7 +16,7 @@ Give it a try and feel free to recommend improvements!
 ## **Step 1: Prepare URLs**
 
 1. Create a folder for this automation, e.g., `C:\Automation\MorningWorkspace`.
-2. Inside, create a file called `urls.txt`.
+2. Inside the folder, create a file called `urls.txt`.
 3. Add all your required URLs (websites), one per line in "urls.txt" file. Lines starting with `#` are ignored.
 
 Example:
@@ -26,12 +26,13 @@ https://outlook.office.com
 https://teams.microsoft.com
 https://servicenow.company.com
 ```
+<img width="427" height="162" alt="image" src="https://github.com/user-attachments/assets/e627cbd0-0264-4a28-a6b3-5098c013a8f6" />
 
 ---
 
 ## **Step 2: Save the Script**
 
-1. Create a `MorningChromeLauncher.ps1` PowerShell file **in the same folder** as `urls.txt` and Copy the following script into the PowerShell file.
+1. Create a `MorningChromeLauncher.ps1` PowerShell file **in the same folder** as `urls.txt` and copy the following script into the PowerShell file.
 
 ```powershell
 # MorningChromeLauncher.ps1
@@ -95,13 +96,15 @@ Write-Host "All tabs launched."
 
 ## **Step 3: Allow Scripts to Run**
 
-Run **once** in PowerShell:
+Open PowerShell. If PowerShell’s execution policy is preventing scripts from running for security reasons, fix it safely with run **once** in PowerShell:
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 Press `Y` to confirm.
+
+<img width="974" height="282" alt="image" src="https://github.com/user-attachments/assets/0a764d8e-e9bd-43fa-aacf-e726e604ea66" />
 
 ---
 
@@ -111,13 +114,19 @@ Press `Y` to confirm.
 cd C:\Automation\MorningWorkspace
 .\MorningChromeLauncher.ps1
 ```
-
 1. Choose the Chrome profile from the list.
 2. Chrome will open and load all your URLs automatically.
+
+In my case, I am using my office PC, igonore my file path. 
+
+<img width="977" height="386" alt="image" src="https://github.com/user-attachments/assets/05b75295-28cb-46cd-83f7-2c76875c9b0b" />
+
+<img width="967" height="669" alt="image" src="https://github.com/user-attachments/assets/26b3c787-aeee-4392-8d3e-dd5c29042a7b" />
 
 ---
 
 ## **Step 5: Desktop Shortcut**
+To make it more easier to run, create a desktop shortcut. 
 
 1. Right-click desktop → **New → Shortcut**
 2. Location:
@@ -129,6 +138,10 @@ powershell.exe -ExecutionPolicy Bypass -File "C:\Automation\MorningWorkspace\Mor
 3. Name it `Morning Workspace`.
 4. Double-click it every morning — all tabs open automatically.
 
+<img width="754" height="456" alt="image" src="https://github.com/user-attachments/assets/cadba2fa-9929-4989-849a-94af7db0c5a8" />
+
+<img width="835" height="347" alt="image" src="https://github.com/user-attachments/assets/fdeb03ac-0486-4296-be04-621af9ac7185" />
+
 ---
 
 ## **Step 6: Update URLs**
@@ -137,10 +150,3 @@ Edit `urls.txt` to add or remove URLs. Next time you run the script, the changes
 
 ---
 
-This is short, easy to follow, and fully functional for anyone to get started with **PowerShell-based morning workspace automation**.
-
----
-
-If you want, I can also **make it an even shorter “1-page GitHub README style”** with all commands and script blocks inlined, perfect for copy-paste without extra explanation.
-
-Do you want me to do that?
