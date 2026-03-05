@@ -5,7 +5,7 @@ Are you bored or is it time-consuming to open all those tabs sometimes more than
 
 If that is the scenario, here is a PowerShell script which you can just run, and it will **automatically open all your required browser tabs**. 
 
-This saves time. Automation is the trend now. If we have the technology or trick, why not give it a try?
+This saves time. If we have the technology or trick, why not give it a try?
 
 I have provided a **step-by-step easy guide** and **full PowerShell script**, ready to run. 
 
@@ -19,7 +19,14 @@ Give it a try and feel free to recommend improvements!
 2. Inside the folder, create a file called `urls.txt`.
 3. Add all your required URLs (websites), one per line in "urls.txt" file. Lines starting with `#` are ignored.
 
-<img width="427" height="162" alt="image" src="https://github.com/user-attachments/assets/e627cbd0-0264-4a28-a6b3-5098c013a8f6" />
+Example:
+
+```powershell
+https://outlook.office.com
+https://teams.microsoft.com
+https://servicenow.company.com
+```
+
 
 ---
 
@@ -99,6 +106,8 @@ Press `Y` to confirm.
 
 <img width="974" height="282" alt="image" src="https://github.com/user-attachments/assets/0a764d8e-e9bd-43fa-aacf-e726e604ea66" />
 
+In my case, I am using my office PC, igonore my file path. 
+
 ---
 
 ## **Step 4: Run the Script**
@@ -110,9 +119,17 @@ cd C:\Automation\MorningWorkspace
 1. Choose the Chrome profile from the list.
 2. Chrome will open and load all your URLs automatically.
 
-In my case, I am using my office PC, igonore my file path. 
 
 <img width="977" height="386" alt="image" src="https://github.com/user-attachments/assets/05b75295-28cb-46cd-83f7-2c76875c9b0b" />
+
+The script checks both Program Files and Program Files (x86) paths and exits if Chrome is not installed.
+
+The script reads Chrome’s User Data folder and lists all profiles automatically, falls back to Default if no profiles are found.
+
+The script reads urls.txt and ignores empty lines and lines starting with #.
+
+The tab delay is automatic based on Chrome running or not on the computer. 
+
 
 <img width="967" height="669" alt="image" src="https://github.com/user-attachments/assets/26b3c787-aeee-4392-8d3e-dd5c29042a7b" />
 
@@ -129,7 +146,7 @@ powershell.exe -ExecutionPolicy Bypass -File "C:\Automation\MorningWorkspace\Mor
 ```
 
 3. Name it `Morning Workspace`.
-4. Double-click it every morning — all tabs open automatically.
+4. Double-click it every morning, all tabs open automatically.
 
 <img width="754" height="456" alt="image" src="https://github.com/user-attachments/assets/cadba2fa-9929-4989-849a-94af7db0c5a8" />
 
