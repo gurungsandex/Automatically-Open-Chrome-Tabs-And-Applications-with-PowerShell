@@ -106,7 +106,7 @@ Press `Y` to confirm.
 
 <img width="974" height="282" alt="image" src="https://github.com/user-attachments/assets/0a764d8e-e9bd-43fa-aacf-e726e604ea66" />
 
-In my case, I am using my office PC, igonore my file path. 
+In my case, I am using my office PC, ignore my file path. 
 
 ---
 
