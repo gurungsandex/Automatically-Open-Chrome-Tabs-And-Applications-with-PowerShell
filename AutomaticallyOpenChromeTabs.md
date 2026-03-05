@@ -1,7 +1,7 @@
 
 # **Automatically Open All Your Morning Chrome Tabs with PowerShell**
 
-Are you bored or is it time-consuming to open all those work related tabs, sometimes more than 10 or 20 browser tabs when you start your morning at work? 
+Are you bored or is it time-consuming to open all those work-related tabs, sometimes more than 10 or 20 browser tabs when you start your morning at work? 
 
 If that is the scenario, here is a PowerShell script which you can just run, and it will **automatically open all your required browser tabs**. 
 
