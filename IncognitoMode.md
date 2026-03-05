@@ -1,5 +1,5 @@
 
-I prefer Incognito mode. To run the browser in **incognito mode**, use this script. 
+I prefer incognito mode. To run the browser in **incognito mode**, use this script instead. 
 
 
 
